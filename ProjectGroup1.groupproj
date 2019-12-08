@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6A462AA7-C39A-4981-A712-C9485C437501}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Facturacion.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Facturacion">
+        <MSBuild Projects="Facturacion.dproj"/>
+    </Target>
+    <Target Name="Facturacion:Clean">
+        <MSBuild Projects="Facturacion.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Facturacion:Make">
+        <MSBuild Projects="Facturacion.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Facturacion"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Facturacion:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Facturacion:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

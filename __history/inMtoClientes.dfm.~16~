@@ -1,0 +1,1053 @@
+inherited frmMtoClientes: TfrmMtoClientes
+  Left = 5
+  Top = 4
+  Caption = 'Pacientes'
+  ClientHeight = 652
+  ClientWidth = 1275
+  ExplicitWidth = 1291
+  ExplicitHeight = 691
+  PixelsPerInch = 120
+  TextHeight = 15
+  inherited pButtonPage: TPanel
+    Width = 1149
+    Height = 652
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    ExplicitWidth = 1149
+    ExplicitHeight = 652
+  end
+  inherited pButtonRightBar: TPanel
+    Left = 1149
+    Height = 652
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    ExplicitLeft = 1149
+    ExplicitHeight = 652
+    object btn1: TSpeedButton [0]
+      Left = 4
+      Top = 216
+      Width = 118
+      Height = 33
+      Cursor = crHandPoint
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Caption = '&Nuevo Cliente'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -12
+      Font.Name = 'Lucida Sans'
+      Font.Style = []
+      ParentFont = False
+      OnClick = btn1Click
+    end
+    inherited pButtonGen: TPanel
+      Top = 453
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Constraints.MinHeight = 100
+      Constraints.MinWidth = 124
+      ExplicitTop = 453
+      inherited sbGrabar: TSpeedButton
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+      end
+      inherited sbCancelar: TSpeedButton
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+      end
+      inherited sbSalir: TSpeedButton
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+      end
+    end
+    inherited pButtonBDStat: TPanel
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Constraints.MinHeight = 46
+      Constraints.MinWidth = 124
+      inherited pnTableName: TPanel
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        inherited lblEditMode: TLabel
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+        end
+      end
+      inherited Panel4: TPanel
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        inherited lblTablaOrigen: TLabel
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+        end
+      end
+    end
+  end
+  inherited pcPantalla: TPageControl
+    Width = 1149
+    Height = 652
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    ExplicitWidth = 1149
+    ExplicitHeight = 652
+    inherited tsLista: TTabSheet
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      ExplicitWidth = 1141
+      ExplicitHeight = 619
+      inherited cxGrdPrincipal: TcxGrid
+        Width = 1141
+        Height = 583
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        ExplicitWidth = 1141
+        ExplicitHeight = 583
+        inherited cxGrdDBTabPrin: TcxGridDBTableView
+          object cxgrdbclmnGrdDBTabPrinCODIGO_CLIENTE: TcxGridDBColumn
+            Caption = 'Filiaci'#243'n'
+            DataBinding.FieldName = 'CODIGO_CLIENTE'
+            Width = 60
+          end
+          object cxgrdbclmnGrdDBTabPrinAPELLIDOS: TcxGridDBColumn
+            DataBinding.FieldName = 'APELLIDOS'
+            Width = 157
+          end
+          object cxgrdbclmnGrdDBTabPrinNOMBRE: TcxGridDBColumn
+            DataBinding.FieldName = 'NOMBRE'
+            Width = 104
+          end
+          object cxgrdbclmnGrdDBTabPrinRAZONSOCIAL_CLIENTE: TcxGridDBColumn
+            Caption = 'Raz'#243'n Social'
+            DataBinding.FieldName = 'RAZONSOCIAL_CLIENTE'
+            Width = 205
+          end
+          object cxgrdbclmnGrdDBTabPrinMOVIL_CLIENTE: TcxGridDBColumn
+            Caption = 'Tel'#233'fono1'
+            DataBinding.FieldName = 'MOVIL_CLIENTE'
+            Width = 135
+          end
+          object cxgrdbclmnGrdDBTabPrinTELEFONO_CLIENTE: TcxGridDBColumn
+            Caption = 'Tel'#233'fono2'
+            DataBinding.FieldName = 'TELEFONO_CLIENTE'
+            Width = 161
+          end
+          object cxgrdbclmnGrdDBTabPrinNIF_CLIENTE: TcxGridDBColumn
+            Caption = 'Nif'
+            DataBinding.FieldName = 'NIF_CLIENTE'
+            Width = 115
+          end
+          object cxgrdbclmnGrdDBTabPrinEMAIL_CLIENTE: TcxGridDBColumn
+            Caption = 'Email'
+            DataBinding.FieldName = 'EMAIL_CLIENTE'
+            Width = 171
+          end
+          object cxgrdbclmnGrdDBTabPrinDIRECCION_CLIENTE1: TcxGridDBColumn
+            Caption = 'DIRECCION1'
+            DataBinding.FieldName = 'DIRECCION1_CLIENTE'
+            Width = 264
+          end
+          object cxgrdbclmnGrdDBTabPrinDIRECCION_CLIENTE2: TcxGridDBColumn
+            Caption = 'DIRECCION2'
+            DataBinding.FieldName = 'DIRECCION2_CLIENTE'
+            Width = 102
+          end
+          object cxgrdbclmnGrdDBTabPrinPOBLACION_CLIENTE: TcxGridDBColumn
+            Caption = 'Poblaci'#243'n'
+            DataBinding.FieldName = 'POBLACION_CLIENTE'
+            Width = 176
+          end
+          object cxgrdbclmnGrdDBTabPrinCPOSTAL_CLIENTE: TcxGridDBColumn
+            Caption = 'C'#243'digo Postal'
+            DataBinding.FieldName = 'CPOSTAL_CLIENTE'
+            Width = 95
+          end
+          object cxgrdbclmnGrdDBTabPrinPROVINCIA_CLIENTE: TcxGridDBColumn
+            Caption = 'Provincia'
+            DataBinding.FieldName = 'PROVINCIA_CLIENTE'
+            Width = 115
+          end
+          object cxgrdbclmnGrdDBTabPrinREFERENCIA_CLIENTE: TcxGridDBColumn
+            Caption = 'Referencia'
+            DataBinding.FieldName = 'REFERENCIA_CLIENTE'
+            Width = 204
+          end
+          object cxgrdbclmnGrdDBTabPrinOBSERVACIONES_CLIENTE: TcxGridDBColumn
+            Caption = 'Observaciones'
+            DataBinding.FieldName = 'OBSERVACIONES_CLIENTE'
+            Width = 144
+          end
+          object cxgrdbclmnGrdDBTabPrinPROFESION_CLIENTE: TcxGridDBColumn
+            Caption = 'Profesi'#243'n'
+            DataBinding.FieldName = 'PROFESION_CLIENTE'
+            Width = 168
+          end
+          object cxgrdbclmnGrdDBTabPrinFECHA_NACIMIENTO: TcxGridDBColumn
+            Caption = 'Fecha de Nacimiento'
+            DataBinding.FieldName = 'FECHA_NACIMIENTO'
+            Width = 166
+          end
+          object cxgrdbclmnGrdDBTabPrinPAIS_CLIENTE: TcxGridDBColumn
+            Caption = 'Pa'#237's'
+            DataBinding.FieldName = 'PAIS_CLIENTE'
+            Width = 136
+          end
+          object cxgrdbclmnGrdDBTabPrinIBAN: TcxGridDBColumn
+            DataBinding.FieldName = 'IBAN'
+          end
+        end
+      end
+      inherited pnTopGrid: TPanel
+        Width = 1141
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        ExplicitWidth = 1141
+        inherited btnRestoreWindow: TSpeedButton
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+        end
+        inherited btn2: TSpeedButton
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+        end
+        inherited edtBusqGlobal: TcxTextEdit
+          ExplicitHeight = 23
+        end
+      end
+    end
+    inherited tsFicha: TTabSheet
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      ExplicitLeft = 4
+      ExplicitTop = 29
+      ExplicitWidth = 1141
+      ExplicitHeight = 619
+      object pnl1: TPanel
+        Left = 0
+        Top = 0
+        Width = 1141
+        Height = 178
+        Margins.Left = 4
+        Margins.Top = 4
+        Margins.Right = 4
+        Margins.Bottom = 4
+        Align = alTop
+        TabOrder = 0
+        object cxdbtxtdtCODIGO_CLIENTE: TcxDBTextEdit
+          Left = 85
+          Top = 31
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'CODIGO_CLIENTE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 3
+          Width = 149
+        end
+        object cxlbl2: TcxLabel
+          Left = 85
+          Top = 12
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'C'#243'digo'
+        end
+        object cxdbtxtdtRAZON_SOCIAL: TcxDBTextEdit
+          Left = 148
+          Top = 129
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'RAZONSOCIAL_CLIENTE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 13
+          OnEnter = cxdbtxtdtRAZON_SOCIALEnter
+          Width = 554
+        end
+        object cxlbl3: TcxLabel
+          Left = 23
+          Top = 130
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'Raz'#243'n Social Fiscal'
+        end
+        object cxdbtxtdtTELEFONO2: TcxDBTextEdit
+          Left = 571
+          Top = 93
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'TELEFONO_CLIENTE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 11
+          Width = 131
+        end
+        object cxlbl5: TcxLabel
+          Left = 345
+          Top = 94
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'Tel'#233'fonos'
+        end
+        object cxlbl6: TcxLabel
+          Left = 372
+          Top = 62
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'Email'
+        end
+        object cxdbtxtdtEMAIL: TcxDBTextEdit
+          Left = 414
+          Top = 62
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'EMAIL_CLIENTE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 7
+          Width = 288
+        end
+        object cxlbl4: TcxLabel
+          Left = 57
+          Top = 79
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'Nif'
+        end
+        object cxdbtxtdtNIF: TcxDBTextEdit
+          Left = 85
+          Top = 78
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'NIF_CLIENTE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 8
+          Width = 149
+        end
+        object cxdbtxtdtMOVIL_CLIENTE: TcxDBTextEdit
+          Left = 414
+          Top = 93
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'MOVIL_CLIENTE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 10
+          Width = 131
+        end
+        object cxdbtxtdtNOMBRE: TcxDBTextEdit
+          Left = 324
+          Top = 31
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'NOMBRE'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 4
+          Width = 153
+        end
+        object cxlbl15: TcxLabel
+          Left = 324
+          Top = 12
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'Nombre'
+        end
+        object cxlbl17: TcxLabel
+          Left = 505
+          Top = 12
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Caption = 'Apellidos'
+        end
+        object cxdbtxtdtAPELLIDOS: TcxDBTextEdit
+          Left = 505
+          Top = 31
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          DataBinding.DataField = 'APELLIDOS'
+          DataBinding.DataSource = dsTablaG
+          TabOrder = 5
+          Width = 197
+        end
+      end
+      object pnl2: TPanel
+        Left = 0
+        Top = 178
+        Width = 1141
+        Height = 441
+        Margins.Left = 4
+        Margins.Top = 4
+        Margins.Right = 4
+        Margins.Bottom = 4
+        Align = alClient
+        TabOrder = 1
+        object cxpgcntrl2: TcxPageControl
+          Left = 1
+          Top = 1
+          Width = 1139
+          Height = 439
+          Margins.Left = 4
+          Margins.Top = 4
+          Margins.Right = 4
+          Margins.Bottom = 4
+          Align = alClient
+          TabOrder = 0
+          Properties.ActivePage = cxtbsht3
+          Properties.CustomButtons.Buttons = <>
+          ClientRectBottom = 435
+          ClientRectLeft = 4
+          ClientRectRight = 1135
+          ClientRectTop = 26
+          object cxtbsht3: TcxTabSheet
+            Margins.Left = 4
+            Margins.Top = 4
+            Margins.Right = 4
+            Margins.Bottom = 4
+            Caption = 'Domicilio fiscal'
+            ImageIndex = 0
+            object cxdbtxtdt7: TcxDBTextEdit
+              Left = 132
+              Top = 7
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'DIRECCION1_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 0
+              Width = 296
+            end
+            object cxlbl7: TcxLabel
+              Left = 47
+              Top = 12
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Direcci'#243'n 1'
+            end
+            object cxlbl8: TcxLabel
+              Left = 32
+              Top = 84
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'C'#243'digo Postal'
+            end
+            object cxdbtxtdt8: TcxDBTextEdit
+              Left = 132
+              Top = 79
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'CPOSTAL_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 4
+              Width = 70
+            end
+            object cxlbl9: TcxLabel
+              Left = 57
+              Top = 123
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Poblaci'#243'n'
+            end
+            object cxdbtxtdt9: TcxDBTextEdit
+              Left = 132
+              Top = 118
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'POBLACION_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 6
+              Width = 296
+            end
+            object cxdbtxtdt10: TcxDBTextEdit
+              Left = 132
+              Top = 158
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'PROVINCIA_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 8
+              Width = 296
+            end
+            object cxlbl10: TcxLabel
+              Left = 62
+              Top = 162
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Provincia'
+            end
+            object cxdbtxtdt16: TcxDBTextEdit
+              Left = 132
+              Top = 197
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'PAIS_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 10
+              Width = 296
+            end
+            object cxlbl16: TcxLabel
+              Left = 92
+              Top = 202
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Pa'#237's'
+            end
+            object cxdbtxtdtDireccion: TcxDBTextEdit
+              Left = 132
+              Top = 43
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'DIRECCION2_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 2
+              Width = 297
+            end
+            object cxlbl1: TcxLabel
+              Left = 47
+              Top = 49
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Direcci'#243'n 2'
+            end
+            object cxlbl18: TcxLabel
+              Left = 32
+              Top = 242
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'IBAN Bancario'
+            end
+            object cxdbtxtdtPAIS_CLIENTE: TcxDBTextEdit
+              Left = 132
+              Top = 237
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'IBAN'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 12
+              Width = 296
+            end
+          end
+          object cxtbsht1: TcxTabSheet
+            Caption = 'M'#225's datos personales'
+            ImageIndex = 1
+            object cxedtRAZONSOCIAL_CLIENTE: TcxDBTextEdit
+              Left = 133
+              Top = 33
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'PROFESION_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 0
+              Width = 568
+            end
+            object cxlbl11: TcxLabel
+              Left = 31
+              Top = 34
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Profesi'#243'n'
+            end
+            object cxedtPROFESION_CLIENTE: TcxDBTextEdit
+              Left = 133
+              Top = 126
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'OBSERVACIONES_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 5
+              Width = 541
+            end
+            object cxlbl12: TcxLabel
+              Left = 4
+              Top = 126
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Observaciones'
+            end
+            object cxlbl13: TcxLabel
+              Left = 31
+              Top = 82
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Referencia'
+            end
+            object cxedtPROFESION_CLIENTE1: TcxDBTextEdit
+              Left = 133
+              Top = 81
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              DataBinding.DataField = 'REFERENCIA_CLIENTE'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 2
+              Width = 568
+            end
+            object cxlbl14: TcxLabel
+              Left = 4
+              Top = 190
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Caption = 'Fecha de nacimiento'
+            end
+            object cxdbdtdt1: TcxDBDateEdit
+              Left = 184
+              Top = 184
+              DataBinding.DataField = 'FECHA_NACIMIENTO'
+              DataBinding.DataSource = dsTablaG
+              TabOrder = 6
+              Width = 177
+            end
+          end
+          object cxtbsht2: TcxTabSheet
+            Caption = 'Historia dental'
+            ImageIndex = 2
+            object cxgrd5: TcxGrid
+              Left = 0
+              Top = 0
+              Width = 1131
+              Height = 409
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Align = alClient
+              TabOrder = 0
+              object cxgrdtvtv1: TcxGridDBTableView
+                Navigator.Buttons.ConfirmDelete = True
+                Navigator.Buttons.CustomButtons = <>
+                Navigator.Visible = True
+                DataController.DataModeController.SmartRefresh = True
+                DataController.DataSource = DMClientes.dsHistoria
+                DataController.Summary.DefaultGroupSummaryItems = <>
+                DataController.Summary.FooterSummaryItems = <>
+                DataController.Summary.SummaryGroups = <>
+                OptionsBehavior.GoToNextCellOnEnter = True
+                OptionsCustomize.ColumnGrouping = False
+                OptionsSelection.InvertSelect = False
+                OptionsView.NoDataToDisplayInfoText = '<No hay datos a mostrar>'
+                OptionsView.GroupByBox = False
+                object cxgrdbclmncxgrdtvtv1FECHA: TcxGridDBColumn
+                  Caption = 'Fecha'
+                  DataBinding.FieldName = 'FECHA'
+                  PropertiesClassName = 'TcxDateEditProperties'
+                  Width = 109
+                end
+                object cxgrdbclmncxgrdtvtv1CODIGO_ARTICULO: TcxGridDBColumn
+                  Caption = 'C'#243'digo Tratamiento'
+                  DataBinding.FieldName = 'CODIGO_ARTICULO'
+                  PropertiesClassName = 'TcxTextEditProperties'
+                  Width = 128
+                end
+                object cxgrdbclmncxgrdtvtv1DESCRIPCION_ARTICULO: TcxGridDBColumn
+                  Caption = 'Descripci'#243'n Tratamiento'
+                  DataBinding.FieldName = 'DESCRIPCION_ARTICULO'
+                  PropertiesClassName = 'TcxTextEditProperties'
+                  Width = 181
+                end
+                object cxgrdbclmncxgrdtvtv1ZONA: TcxGridDBColumn
+                  Caption = 'Nro Pieza dental'
+                  DataBinding.FieldName = 'ZONA'
+                  PropertiesClassName = 'TcxTextEditProperties'
+                  Width = 111
+                end
+                object cxgrdbclmncxgrdtvtv1PRECIOVENTA_ARTICULO: TcxGridDBColumn
+                  Caption = 'Precio'
+                  DataBinding.FieldName = 'PRECIOVENTA_ARTICULO'
+                  PropertiesClassName = 'TcxCurrencyEditProperties'
+                  Width = 70
+                end
+                object cxgrdbclmncxgrdtvtv1DESCRIPCION_HISTORIA: TcxGridDBColumn
+                  Caption = 'Historia detallada'
+                  DataBinding.FieldName = 'DESCRIPCION_HISTORIA'
+                  PropertiesClassName = 'TcxButtonEditProperties'
+                  Properties.Buttons = <
+                    item
+                      Default = True
+                      Kind = bkEllipsis
+                    end>
+                  Properties.OnButtonClick = cxgrdbclmncxgrdtvtv1DESCRIPCION_HISTORIAPropertiesButtonClick
+                  Width = 151
+                end
+                object cxgrdbclmncxgrdtvtv1ODONTOLOGO: TcxGridDBColumn
+                  DataBinding.FieldName = 'ODONTOLOGO'
+                end
+                object cxgrdbclmncxgrdtvtv1NOMBRE_ODONTOLOGO: TcxGridDBColumn
+                  DataBinding.FieldName = 'NOMBRE_ODONTOLOGO'
+                  Width = 147
+                end
+                object cxgrdbclmncxgrdtvtv1NRO_FACTURA: TcxGridDBColumn
+                  DataBinding.FieldName = 'NRO_FACTURA'
+                end
+                object cxgrdbclmncxgrdtvtv1SERIE_FACTURA: TcxGridDBColumn
+                  DataBinding.FieldName = 'SERIE_FACTURA'
+                end
+                object cxgrdbclmncxgrdtvtv1LINEA_LINEA: TcxGridDBColumn
+                  DataBinding.FieldName = 'LINEA_LINEA'
+                end
+                object cxgrdbclmncxgrdtvtv1ID: TcxGridDBColumn
+                  DataBinding.FieldName = 'ID'
+                end
+              end
+              object tv2: TcxGridDBBandedTableView
+                Navigator.Buttons.CustomButtons = <>
+                Navigator.Visible = True
+                DataController.DetailKeyFieldNames = 'AppointmentId'
+                DataController.KeyFieldNames = 'PerId'
+                DataController.MasterKeyFieldNames = 'AppointmentId'
+                DataController.Summary.DefaultGroupSummaryItems = <>
+                DataController.Summary.FooterSummaryItems = <>
+                DataController.Summary.SummaryGroups = <>
+                OptionsView.GroupByBox = False
+                Bands = <
+                  item
+                    Width = 958
+                  end>
+                object cxgrdbndclmntv2PerId: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'PerId'
+                  Width = 37
+                  Position.BandIndex = 0
+                  Position.ColIndex = 0
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2AppointmentId: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'AppointmentId'
+                  Width = 81
+                  Position.BandIndex = 0
+                  Position.ColIndex = 1
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2Linea: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'Linea'
+                  Width = 44
+                  Position.BandIndex = 0
+                  Position.ColIndex = 2
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2clave: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'clave'
+                  Width = 126
+                  Position.BandIndex = 0
+                  Position.ColIndex = 3
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2valor: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'valor'
+                  Width = 146
+                  Position.BandIndex = 0
+                  Position.ColIndex = 4
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2instantemodif: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'instantemodif'
+                  Width = 137
+                  Position.BandIndex = 0
+                  Position.ColIndex = 7
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2descripcion: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'descripcion'
+                  Width = 178
+                  Position.BandIndex = 0
+                  Position.ColIndex = 5
+                  Position.RowIndex = 0
+                end
+                object cxgrdbndclmntv2parte: TcxGridDBBandedColumn
+                  DataBinding.FieldName = 'parte'
+                  Width = 209
+                  Position.BandIndex = 0
+                  Position.ColIndex = 6
+                  Position.RowIndex = 0
+                end
+              end
+              object lv1: TcxGridLevel
+                GridView = cxgrdtvtv1
+              end
+            end
+          end
+          object cxtbsht4: TcxTabSheet
+            Caption = 'Historia Facturaci'#243'n'
+            ImageIndex = 3
+            object cxgrd1: TcxGrid
+              Left = 0
+              Top = 0
+              Width = 1131
+              Height = 409
+              Margins.Left = 4
+              Margins.Top = 4
+              Margins.Right = 4
+              Margins.Bottom = 4
+              Align = alClient
+              TabOrder = 0
+              object cxgrdbtblvw1: TcxGridDBTableView
+                Navigator.Buttons.ConfirmDelete = True
+                Navigator.Buttons.CustomButtons = <>
+                Navigator.Visible = True
+                DataController.DataModeController.SmartRefresh = True
+                DataController.DataSource = DMClientes.dsFacturas
+                DataController.Summary.DefaultGroupSummaryItems = <>
+                DataController.Summary.FooterSummaryItems = <>
+                DataController.Summary.SummaryGroups = <>
+                OptionsBehavior.GoToNextCellOnEnter = True
+                OptionsCustomize.ColumnGrouping = False
+                OptionsData.Deleting = False
+                OptionsData.Editing = False
+                OptionsData.Inserting = False
+                OptionsSelection.InvertSelect = False
+                OptionsView.NoDataToDisplayInfoText = '<No hay datos a mostrar>'
+                OptionsView.GroupByBox = False
+                object cxgrdbclmncxgrdbtblvw1FECHA_FACTURA: TcxGridDBColumn
+                  Caption = 'Fecha'
+                  DataBinding.FieldName = 'FECHA_FACTURA'
+                end
+                object cxgrdbclmncxgrdbtblvw1NRO_FACTURA: TcxGridDBColumn
+                  Caption = 'Nro Factura'
+                  DataBinding.FieldName = 'NRO_FACTURA'
+                  Width = 80
+                end
+                object cxgrdbclmncxgrdbtblvw1SERIE_FACTURA: TcxGridDBColumn
+                  Caption = 'Serie Factura'
+                  DataBinding.FieldName = 'SERIE_FACTURA'
+                end
+                object cxgrdbclmncxgrdbtblvw1CODIGO_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'C'#243'digo Cliente'
+                  DataBinding.FieldName = 'CODIGO_CLIENTE_FACTURA'
+                end
+                object cxgrdbclmncxgrdbtblvw1RAZONSOCIAL_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Raz'#243'n Social'
+                  DataBinding.FieldName = 'RAZONSOCIAL_CLIENTE_FACTURA'
+                  Width = 203
+                end
+                object cxgrdbclmncxgrdbtblvw1NIF_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Nif'
+                  DataBinding.FieldName = 'NIF_CLIENTE_FACTURA'
+                  Width = 144
+                end
+                object cxgrdbclmncxgrdbtblvw1MOVIL_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Tel'#233'fono1'
+                  DataBinding.FieldName = 'MOVIL_CLIENTE_FACTURA'
+                  Width = 164
+                end
+                object cxgrdbclmncxgrdbtblvw1EMAIL_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Email'
+                  DataBinding.FieldName = 'EMAIL_CLIENTE_FACTURA'
+                  Width = 179
+                end
+                object cxgrdbclmncxgrdbtblvw1DIRECCION1_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Direcci'#243'n1'
+                  DataBinding.FieldName = 'DIRECCION1_CLIENTE_FACTURA'
+                  Width = 204
+                end
+                object cxgrdbclmncxgrdbtblvw1DIRECCION2_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Direcci'#243'n2'
+                  DataBinding.FieldName = 'DIRECCION2_CLIENTE_FACTURA'
+                  Width = 190
+                end
+                object cxgrdbclmncxgrdbtblvw1POBLACION_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Poblaci'#243'n'
+                  DataBinding.FieldName = 'POBLACION_CLIENTE_FACTURA'
+                  Width = 185
+                end
+                object cxgrdbclmncxgrdbtblvw1PROVINCIA_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Provincia'
+                  DataBinding.FieldName = 'PROVINCIA_CLIENTE_FACTURA'
+                  Width = 183
+                end
+                object cxgrdbclmncxgrdbtblvw1CPOSTAL_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'C'#243'digo Postal'
+                  DataBinding.FieldName = 'CPOSTAL_CLIENTE_FACTURA'
+                end
+                object cxgrdbclmncxgrdbtblvw1PAIS_CLIENTE_FACTURA: TcxGridDBColumn
+                  Caption = 'Pa'#237's'
+                  DataBinding.FieldName = 'PAIS_CLIENTE_FACTURA'
+                  Width = 144
+                end
+                object cxgrdbclmncxgrdbtblvw1TOTAL_LIQUIDO_FACTURA: TcxGridDBColumn
+                  Caption = 'Total L'#237'quido'
+                  DataBinding.FieldName = 'TOTAL_LIQUIDO_FACTURA'
+                end
+                object cxgrdbclmncxgrdbtblvw1FORMA_PAGO_FACTURA: TcxGridDBColumn
+                  Caption = 'Forma de Pago'
+                  DataBinding.FieldName = 'FORMA_PAGO_FACTURA'
+                  Width = 151
+                end
+                object cxgrdbclmncxgrdbtblvw1COMENTARIOS_FACTURA: TcxGridDBColumn
+                  Caption = 'Comentarios'
+                  DataBinding.FieldName = 'COMENTARIOS_FACTURA'
+                end
+              end
+              object cxgrdbtblvwcxgrd1DBTableView1: TcxGridDBTableView
+                Navigator.Buttons.CustomButtons = <>
+                DataController.DataSource = DMClientes.dsLinFac
+                DataController.DetailKeyFieldNames = 'NRO_FACTURA_LINEA; SERIE_FACTURA_LINEA'
+                DataController.KeyFieldNames = 'LINEA_LINEA'
+                DataController.MasterKeyFieldNames = 'NRO_FACTURA; SERIE_FACTURA'
+                DataController.Summary.DefaultGroupSummaryItems = <>
+                DataController.Summary.FooterSummaryItems = <>
+                DataController.Summary.SummaryGroups = <>
+                OptionsBehavior.ColumnHeaderHints = False
+                OptionsCustomize.ColumnFiltering = False
+                OptionsCustomize.ColumnGrouping = False
+                OptionsCustomize.ColumnMoving = False
+                OptionsCustomize.ColumnsQuickCustomizationShowCommands = False
+                OptionsData.Deleting = False
+                OptionsData.Editing = False
+                OptionsData.Inserting = False
+                OptionsView.GroupByBox = False
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1LINEA_LINEA: TcxGridDBColumn
+                  DataBinding.FieldName = 'LINEA_LINEA'
+                  Width = 28
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1CODIGO_ARTICULO_LINEA: TcxGridDBColumn
+                  Caption = 'C'#243'digo Tratamiento'
+                  DataBinding.FieldName = 'CODIGO_ARTICULO_LINEA'
+                  Width = 164
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1DESCRIPCION_ARTICULO_LINEA: TcxGridDBColumn
+                  Caption = 'Descripci'#243'n Tratamiento'
+                  DataBinding.FieldName = 'DESCRIPCION_ARTICULO_LINEA'
+                  Width = 804
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1ZONA: TcxGridDBColumn
+                  Caption = 'Nro Pieza'
+                  DataBinding.FieldName = 'ZONA'
+                  Width = 484
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1PRECIOVENTA_ARTICULO_LINEA: TcxGridDBColumn
+                  Caption = 'Precio'
+                  DataBinding.FieldName = 'PRECIOVENTA_ARTICULO_LINEA'
+                  Width = 84
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1CANTIDAD_LINEA: TcxGridDBColumn
+                  Caption = 'Cantidad'
+                  DataBinding.FieldName = 'CANTIDAD_LINEA'
+                  Width = 84
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1SUM_TOTAL_LINEA: TcxGridDBColumn
+                  Caption = 'Total'
+                  DataBinding.FieldName = 'SUM_TOTAL_LINEA'
+                  Width = 84
+                end
+                object cxgrdbclmncxgrdbtblvwcxgrd1DBTableView1ODONTOLOGO: TcxGridDBColumn
+                  Caption = 'Nro Odont'#243'logo'
+                  DataBinding.FieldName = 'ODONTOLOGO'
+                  Width = 68
+                end
+              end
+              object cxgrdlvlcxgrd1Level1: TcxGridLevel
+                GridView = cxgrdbtblvw1
+                object cxgrdlvlcxgrd1Level2: TcxGridLevel
+                  GridView = cxgrdbtblvwcxgrd1DBTableView1
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  inherited dsTablaG: TDataSource
+    DataSet = DMClientes.unqryClientes
+    Left = 372
+    Top = 207
+  end
+end

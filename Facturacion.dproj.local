@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/05/31 22:22:23.000.565,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios2.pas=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios.pas</Transaction>
+    <Transaction>2018/05/31 22:22:23.000.567,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios2.dfm=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios.dfm</Transaction>
+    <Transaction>2018/05/31 22:22:30.000.654,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios.dfm=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios2.dfm</Transaction>
+    <Transaction>2018/05/31 22:22:30.000.684,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios2.pas=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios.pas</Transaction>
+    <Transaction>2018/05/31 22:22:30.000.684,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios2.dfm=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios.dfm</Transaction>
+    <Transaction>2018/05/31 22:22:46.000.099,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios.dfm=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\inMtoUsuarios2.dfm</Transaction>
+    <Transaction>2018/05/31 22:42:07.000.648,C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\UniDataModelos.dfm=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\Unit1.dfm</Transaction>
+    <Transaction>2018/08/24 12:39:42.000.865,C:\Users\Alex\Desktop\UniDataClientes.dfm=C:\Users\Alex\Desktop\GLENSHOWES XE7\GLENTSHOWES_XE7\UniDataClientes.dfm</Transaction>
+    <Transaction>2018/08/27 10:55:58.000.205,C:\Users\Alex\Desktop\FACTURACION\GlentShoesPro.dproj=C:\Users\Alex\Desktop\FACTURACION\Facturacion.dproj</Transaction>
+    <Transaction>2019/08/27 10:11:59.000.261,C:\DISCO DURO\proyectos\subocasana\facturacion\Unit1.dfm=C:\DISCO DURO\proyectos\subocasana\facturacion\inMtoClientesHistoria.dfm</Transaction>
+    <Transaction>2019/09/08 16:05:57.000.204,C:\DISCO DURO\proyectos\subocasana\facturacion\inMtoModalHistoriaCli.dfm=C:\DISCO DURO\proyectos\subocasana\facturacion\inMtoClientesHistoria.dfm</Transaction>
+    <Transaction>2019/09/19 17:15:19.000.281,C:\DISCO DURO\proyectos\subocasana\facturacion\inMtoModalFacImp.dfm=C:\DISCO DURO\proyectos\subocasana\facturacion\inMtoModalFacRecImp.dfm</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="inLibComp.pas"/>
+    <File Path="inLibData.pas"/>
+    <File Path="inLibDate.pas"/>
+    <File Path="inLibDevExp.pas"/>
+    <File Path="inLibDir.pas"/>
+    <File Path="inLibtb.pas"/>
+    <File Path="inLibUser.pas"/>
+    <File Path="inLibWin.pas"/>
+    <File Path="inMtoArticulos.pas"/>
+    <File Path="inMtoArticulos.dfm"/>
+    <File Path="inMtoClientes.pas"/>
+    <File Path="inMtoClientes.dfm"/>
+    <File Path="inMtoContadores.pas"/>
+    <File Path="inMtoContadores.dfm"/>
+    <File Path="inMtoFac.pas"/>
+    <File Path="inMtoFac.dfm"/>
+    <File Path="inMtoFacturasHistoria.pas"/>
+    <File Path="inMtoFacturasHistoria.dfm"/>
+    <File Path="inMtoGen.pas"/>
+    <File Path="inMtoGen.dfm"/>
+    <File Path="inMtoGenSearch.pas"/>
+    <File Path="inMtoGenSearch.dfm"/>
+    <File Path="inMtoHistoriaClientes.pas"/>
+    <File Path="inMtoHistoriaClientes.dfm"/>
+    <File Path="inMtoModalFacRec.pas"/>
+    <File Path="inMtoModalFacRec.dfm"/>
+    <File Path="inMtoModalFacImp.pas"/>
+    <File Path="inMtoModalFacImp.dfm"/>
+    <File Path="inMtoModalHistoriaCli.pas"/>
+    <File Path="inMtoModalHistoriaCli.dfm"/>
+    <File Path="inMtoOdontologos.pas"/>
+    <File Path="inMtoOdontologos.dfm"/>
+    <File Path="inMtoParam.pas"/>
+    <File Path="inMtoParam.dfm"/>
+    <File Path="inMtoPresu.pas"/>
+    <File Path="inMtoPresu.dfm"/>
+    <File Path="inMtoPrincipal.pas"/>
+    <File Path="inMtoPrincipal.dfm"/>
+    <File Path="MD5.pas"/>
+    <File Path="UniDataArticulos.pas"/>
+    <File Path="UniDataArticulos.dfm"/>
+    <File Path="UniDataClientes.pas"/>
+    <File Path="UniDataClientes.dfm"/>
+    <File Path="UniDataConn.pas"/>
+    <File Path="UniDataConn.dfm"/>
+    <File Path="UniDataFac.pas"/>
+    <File Path="UniDataFac.dfm"/>
+    <File Path="UniDataHistoriaClientes.pas"/>
+    <File Path="UniDataHistoriaClientes.dfm"/>
+    <File Path="inMtoFormasdePago.pas"/>
+    <File Path="inMtoFormasdePago.dfm"/>
+    <File Path="inMtoPre.pas"/>
+    <File Path="inMtoPre.dfm"/>
+    <File Path="UniDataPre.pas"/>
+    <File Path="UniDataPre.dfm"/>
+    <File Path="inMtoModalPreImp.pas"/>
+    <File Path="inMtoModalPreImp.dfm"/>
+    <File Path="inMtoModalPreRecImp.pas"/>
+    <File Path="inMtoModalPreRecImp.dfm"/>
+    <File Path="inMtoModalFacRecImp.pas"/>
+    <File Path="inMtoModalFacRecImp.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
